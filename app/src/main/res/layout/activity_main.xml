@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.shreya.myapplication.Views.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/addnote_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/newtodo_edittext"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/newtodo_hint"/>
+
+        <Button
+            android:id="@+id/newtodo_button"
+            android:text="@string/add_todo_btntext"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="addNewTodo"/>
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/addnote_ll"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/todo_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_alignParentTop="true"
+            />
+
+
+        <FrameLayout
+            android:id="@+id/done_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todo_frame"
+            />
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>

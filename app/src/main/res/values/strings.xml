@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="completed_todo">Completed ToDo</string>
+    <string name="todo_item">ToDo Item</string>
+    <string name="newtodo_hint">Enter a reminder</string>
+    <string name="add_todo_btntext">Add ToDo</string>
+
+</resources>
